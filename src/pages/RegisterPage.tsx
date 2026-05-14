@@ -3,9 +3,6 @@ import { Link } from "react-router-dom";
 import {
   ArrowUpRight,
   Sparkles,
-  ShieldCheck,
-  CheckCircle2,
-  Users,
 } from "lucide-react";
 
 import AuthLayout from "../layouts/AuthLayout";

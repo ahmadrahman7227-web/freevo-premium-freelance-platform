@@ -160,10 +160,10 @@ const RevenueChart = () => {
                 color: "#84A98C",
                 fontWeight: 500,
               }}
-               formatter={(value: number) => [
-                `$${value.toLocaleString()}`,
-                 "Revenue",
-              ]}
+               formatter={(value) => [
+  `$${Number(value).toLocaleString()}`,
+  "Revenue",
+]}
             />
 
             {/* AREA */}
