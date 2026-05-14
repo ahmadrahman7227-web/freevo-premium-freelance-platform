@@ -248,8 +248,13 @@ const HomePage = () => {
                 </div>
 
                 {/* FLOATING CARD */}
-                <div className=" theme-card float-animation absolute -bottom-15 -left-10 hidden w-60 p-5 lg:block">
+                <div className=" theme-card float-animation absolute -bottom-20 -left-10 hidden w-60 p-5 lg:block">
                   <div className="flex items-center gap-4">
+                    <img
+                      src={alexAvatar}
+                      alt="Alex"
+                      className="h-14 w-14 rounded-2xl object-cover"
+                    />
                     {/* <div className="h-14 w-14 rounded-2xl bg-gradient-to-br from-[#84A98C] to-[#5E81AC]" /> */}
 
                     <div>
