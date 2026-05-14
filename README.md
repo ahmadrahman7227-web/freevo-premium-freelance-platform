@@ -17,7 +17,7 @@ FREEVO combines:
 
 # Live Demo
 
-https://freevo-premium-freelance-platform-mgnipv4vs.vercel.app/
+https://freevo-premium-freelance-platform.vercel.app/
 
 # Preview
 
