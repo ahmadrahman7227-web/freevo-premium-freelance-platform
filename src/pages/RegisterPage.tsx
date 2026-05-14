@@ -7,12 +7,6 @@ import {
 
 import AuthLayout from "../layouts/AuthLayout";
 
-const benefits = [
-  "Access premium freelance projects",
-  "Collaborate with elite global talent",
-  "Manage projects through a modern workspace",
-];
-
 const RegisterPage = () => {
   return (
     <AuthLayout
@@ -20,7 +14,7 @@ const RegisterPage = () => {
       subtitle="Join FREEVO and start building premium digital experiences with modern freelancers worldwide."
     >
       <div className="max-w-xl">
-        {/* FORM */}
+        {/* FORM CARD */}
         <div className="theme-card rounded-[32px] bg-white/60 p-8 backdrop-blur-xl lg:p-10">
           {/* TOP */}
           <div className="mb-10">
@@ -30,11 +24,11 @@ const RegisterPage = () => {
               Join FREEVO
             </div>
 
-            <h2 className="mt-6 text-4xl font-bold text-[#1F2937]">
+            <h2 className="mt-6 text-4xl font-bold leading-tight text-[#1F2937]">
               Create your workspace
             </h2>
 
-            <p className="mt-4 max-w-xl text-lg leading-relaxed text-[#6B7280]">
+            <p className="mt-4 text-lg leading-relaxed text-[#6B7280]">
               Build your freelancer profile, manage projects, and collaborate
               with modern startups through a premium workspace experience.
             </p>
@@ -51,7 +45,7 @@ const RegisterPage = () => {
               <input
                 type="text"
                 placeholder="Enter your full name"
-                className="theme-input h-14 w-full rounded-2xl px-5"
+                className="theme-input h-14 w-full rounded-2xl px-5 transition-all duration-300 focus:border-[#F4A261]/40 focus:bg-white/90"
               />
             </div>
 
@@ -64,7 +58,7 @@ const RegisterPage = () => {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="theme-input h-14 w-full rounded-2xl px-5"
+                className="theme-input h-14 w-full rounded-2xl px-5 transition-all duration-300 focus:border-[#F4A261]/40 focus:bg-white/90"
               />
             </div>
 
@@ -77,7 +71,7 @@ const RegisterPage = () => {
               <input
                 type="password"
                 placeholder="Create password"
-                className="theme-input h-14 w-full rounded-2xl px-5"
+                className="theme-input h-14 w-full rounded-2xl px-5 transition-all duration-300 focus:border-[#F4A261]/40 focus:bg-white/90"
               />
             </div>
 
@@ -85,7 +79,7 @@ const RegisterPage = () => {
             <label className="flex items-start gap-3 text-sm leading-relaxed text-[#6B7280]">
               <input
                 type="checkbox"
-                className="mt-1 h-4 w-4 rounded border-black/10 accent-[#84A98C]"
+                className="mt-1 h-4 w-4 rounded border-black/10 accent-[#F4A261]"
               />
 
               <span>
@@ -94,7 +88,7 @@ const RegisterPage = () => {
             </label>
 
             {/* BUTTON */}
-            <button className="primary-button flex h-14 w-full items-center justify-center gap-2 text-sm font-semibold">
+            <button className="primary-button flex h-14 w-full items-center justify-center gap-2 text-sm font-semibold shadow-[0_15px_35px_rgba(15,23,42,0.12)]">
               Create Account
 
               <ArrowUpRight size={18} />
@@ -112,7 +106,7 @@ const RegisterPage = () => {
             {/* GOOGLE */}
             <button
               type="button"
-              className="flex h-14 w-full items-center justify-center gap-3 rounded-2xl border border-black/5 bg-white/70 text-sm font-medium text-[#1F2937] transition-all duration-300 hover:-translate-y-1 hover:bg-white"
+              className="flex h-14 w-full items-center justify-center gap-3 rounded-2xl border border-black/5 bg-white/70 text-sm font-medium text-[#1F2937] transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-[0_15px_35px_rgba(15,23,42,0.08)]"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -148,15 +142,13 @@ const RegisterPage = () => {
               Already have an account?{" "}
               <Link
                 to="/login"
-                className="font-semibold text-[#1F2937]"
+                className="font-semibold text-[#1F2937] transition hover:opacity-70"
               >
                 Login
               </Link>
             </p>
           </form>
         </div>
-
-        
       </div>
     </AuthLayout>
   );

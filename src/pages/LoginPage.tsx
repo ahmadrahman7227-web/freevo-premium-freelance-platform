@@ -7,12 +7,6 @@ import {
 
 import AuthLayout from "../layouts/AuthLayout";
 
-const features = [
-  "Secure workspace access",
-  "Real-time freelancer collaboration",
-  "Premium project management",
-];
-
 const LoginPage = () => {
   return (
     <AuthLayout
@@ -20,21 +14,20 @@ const LoginPage = () => {
       subtitle="Access your FREEVO workspace and continue building premium digital products."
     >
       <div className="max-w-xl">
-        {/* FORM */}
+        {/* FORM CARD */}
         <div className="theme-card rounded-[32px] bg-white/60 p-8 backdrop-blur-xl lg:p-10">
           {/* TOP */}
           <div className="mb-10">
             <div className="tag-blue inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-semibold">
               <ShieldCheck size={16} />
-
               Secure Login
             </div>
 
-            <h2 className="mt-6 text-4xl font-bold text-[#1F2937]">
+            <h2 className="mt-6 text-4xl font-bold leading-tight text-[#1F2937]">
               Sign in to your account
             </h2>
 
-            <p className="mt-4 max-w-xl text-lg leading-relaxed text-[#6B7280]">
+            <p className="mt-4 text-lg leading-relaxed text-[#6B7280]">
               Manage projects, collaborate with freelancers, and track your
               business growth through your modern FREEVO workspace.
             </p>
@@ -51,7 +44,7 @@ const LoginPage = () => {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="theme-input h-14 w-full rounded-2xl px-5"
+                className="theme-input h-14 w-full rounded-2xl px-5 transition-all duration-300 focus:border-[#84A98C]/40 focus:bg-white/90"
               />
             </div>
 
@@ -64,7 +57,7 @@ const LoginPage = () => {
               <input
                 type="password"
                 placeholder="Enter your password"
-                className="theme-input h-14 w-full rounded-2xl px-5"
+                className="theme-input h-14 w-full rounded-2xl px-5 transition-all duration-300 focus:border-[#84A98C]/40 focus:bg-white/90"
               />
             </div>
 
@@ -81,14 +74,14 @@ const LoginPage = () => {
 
               <button
                 type="button"
-                className="text-sm font-medium text-[#1F2937] transition hover:opacity-70"
+                className="text-sm font-medium text-[#1F2937] transition-all duration-300 hover:opacity-70"
               >
                 Forgot Password?
               </button>
             </div>
 
-            {/* LOGIN */}
-            <button className="primary-button flex h-14 w-full items-center justify-center gap-2 text-sm font-semibold">
+            {/* LOGIN BUTTON */}
+            <button className="primary-button flex h-14 w-full items-center justify-center gap-2 text-sm font-semibold shadow-[0_15px_35px_rgba(15,23,42,0.12)]">
               Login to FREEVO
 
               <ArrowUpRight size={18} />
@@ -106,7 +99,7 @@ const LoginPage = () => {
             {/* GOOGLE */}
             <button
               type="button"
-              className="flex h-14 w-full items-center justify-center gap-3 rounded-2xl border border-black/5 bg-white/70 text-sm font-medium text-[#1F2937] transition-all duration-300 hover:-translate-y-1 hover:bg-white"
+              className="flex h-14 w-full items-center justify-center gap-3 rounded-2xl border border-black/5 bg-white/70 text-sm font-medium text-[#1F2937] transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-[0_15px_35px_rgba(15,23,42,0.08)]"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -142,15 +135,13 @@ const LoginPage = () => {
               Don't have an account?{" "}
               <Link
                 to="/register"
-                className="font-semibold text-[#1F2937]"
+                className="font-semibold text-[#1F2937] transition hover:opacity-70"
               >
                 Create Account
               </Link>
             </p>
           </form>
         </div>
-
-       
       </div>
     </AuthLayout>
   );
